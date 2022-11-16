@@ -1,0 +1,130 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="icon" href="images/logo1.png" type="image/x-icon">
+   <title>Thủ tục thanh toán</title>
+</head>
+<body>
+   
+<header class="header">
+
+   <section class="flex">
+
+      <a href="home.html" class="logo">HL-FRAM</a>
+
+      <nav class="navbar">
+         <a href="home.html">Trang Chủ</a>
+         <a href="about.html">Về Chúng Tôi</a>
+         <a href="menu.html">Sản Phẩm</a>
+         <a href="orders.html">Đặt Hàng</a>
+      </nav>
+
+      <div class="icons">
+         <a href="search.html"><i class="fas fa-search"></i></a>
+         <a href="cart.html"><i class="fas fa-shopping-cart"></i><span>(4)</span></a>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="menu-btn" class="fas fa-bars"></div>
+      </div>
+
+      <div class="profile">
+
+           
+
+         <p class="name"></p>
+         <div class="flex">
+            <a href="profile.html" class="btn">Hồ sơ</a>
+            <a href="components/user_logout.html" onclick="return confirm('đăng xuất khỏi trang web này?');" class="delete-btn">Đăng Xuất</a>
+         </div>
+         <p class="account">
+            <a href="login.html">Đăng Nhập</a> hoặc
+            <a href="register.html">Đăng Kí</a>
+         </p> 
+      </div>
+
+   </section>
+
+</header>
+
+<div class="heading">
+   <h3>Thủ tục thanh toán</h3>
+   <p><a href="home.html">Trang thủ</a> <span> / Thủ tục thanh toán</span></p>
+</div>
+
+<section class="checkout">
+
+   <h1 class="title">Thanh Toán</h1>
+
+<form action="" method="post">
+
+   <div class="cart-items">
+      <h3>các mặt hàng trong giỏ hàng</h3>
+      
+      <p><span class="name"></span><span class="price"></span></p>
+      
+      <p class="grand-total"><span class="name">Tổng cộng :</span><span class="price">đ</span></p>
+      <a href="cart.html" class="btn">Xem giỏ hàng</a>
+   </div>
+
+   <input type="hidden" name="total_products" value="">
+   <input type="hidden" name="total_price" value="" value="">
+   <input type="hidden" name="name" value="">
+   <input type="hidden" name="number" value="">
+   <input type="hidden" name="email" value="">
+   <input type="hidden" name="address" value="">
+
+   <div class="user-info">
+      <h3>thông tin của bạn</h3>
+      <a href="#" class="btn">sửa thông tin</a>
+      <h3>địa chỉ giao hàng</h3>
+      <a href="#" class="btn">sửa địa chỉ</a>
+      <select name="method" class="box" required>
+         <option value="" disabled selected>Chọn phương thức thanh toán </option>
+         <option value="thanh toán khi giao hàng">Thanh toán khi nhận hàng</option>
+         <option value="thẻ tín dụng">Thẻ tín dụng</option>
+         <option value="Chuyển khoản ngân hàng.">Chuyển khoản ngân hàng.</option>
+      </select>
+      <input type="submit" value="đặt hàng" class="btn" style="width:100%; background:var(--red); color:var(--white);" name="submit">
+   </div>
+
+</form>
+   
+</section>
+
+
+<footer class="footer">
+
+   <section class="grid">
+
+      <div class="box">
+         <img src="images/email-icon.png" alt="">
+         <h3>email của chúng tôi</h3>
+         <a href="https://www.google.com/intl/vi/gmail/about/">nthieu033@gmail.com</a>
+      </div>
+      <div class="box">
+         <img src="images/map-icon.png" alt="">
+         <h3>địa chỉ của chúng tôi</h3>
+         <a href="https://www.google.com/maps/place/470+%C4%90%C6%B0%E1%BB%9Dng+Tr%E1%BA%A7n+%C4%90%E1%BA%A1i+Ngh%C4%A9a,+Ho%C3%A0+H%E1%BA%A3i,+Ng%C5%A9+H%C3%A0nh+S%C6%A1n,+%C4%90%C3%A0+N%E1%BA%B5ng+550000,+Vi%E1%BB%87t+Nam/@15.974576,108.2500903,17z/data=!4m13!1m7!3m6!1s0x31421088e365cc75:0x6648fdda14970b2c!2zNDcwIMSQxrDhu51uZyBUcuG6p24gxJDhuqFpIE5naMSpYSwgSG_DoCBI4bqjaSwgTmfFqSBIw6BuaCBTxqFuLCDEkMOgIE7hurVuZyA1NTAwMDAsIFZp4buHdCBOYW0!3b1!8m2!3d15.974576!4d108.252279!3m4!1s0x31421088e365cc75:0x6648fdda14970b2c!8m2!3d15.974576!4d108.252279?hl=vi">470 Trần Đại Nghĩa, Ngũ hành Sơn, Đà Nẵng</a>
+      </div>
+
+      <div class="box">
+         <img src="images/phone-icon.png" alt="">
+         <h3>số điện thoại của chúng tôi</h3>
+         <a href="tel:0856143730">0856143730</a>
+      </div>
+
+   </section>
+</footer>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>

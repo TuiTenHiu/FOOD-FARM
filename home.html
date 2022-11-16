@@ -1,0 +1,261 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="icon" href="images/logo1.png" type="image/x-icon">
+   <title>home</title>
+</head>
+<body>
+
+<header class="header">
+
+   <section class="flex">
+
+      <a href="home.html" class="logo">HL-FRAM</a>
+
+      <nav class="navbar">
+         <a href="home.html">Trang Chủ</a>
+         <a href="about.html">Về Chúng Tôi</a>
+         <a href="menu.html">Sản Phẩm</a>
+         <a href="orders.html">Đặt Hàng</a>
+      </nav>
+
+      <div class="icons">
+         <a href="search.html"><i class="fas fa-search"></i></a>
+         <a href="cart.html"><i class="fas fa-shopping-cart"></i><span>(4)</span></a>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="menu-btn" class="fas fa-bars"></div>
+      </div>
+
+      <div class="profile">
+
+           
+
+         <p class="name"></p>
+         <div class="flex">
+            <a href="profile.html" class="btn">Hồ sơ</a>
+            <a href="components/user_logout.html" onclick="return confirm('đăng xuất khỏi trang web này?');" class="delete-btn">Đăng Xuất</a>
+         </div>
+         <p class="account">
+            <a href="login.html">Đăng Nhập</a> hoặc
+            <a href="register.html">Đăng Kí</a>
+         </p> 
+      </div>
+
+   </section>
+
+</header>
+
+<section class="hero">
+   <div class="swiper hero-slider">
+      <div class="swiper-wrapper">
+      
+         <div class="swiper-slide slide">
+            <div class="content">
+               <span>ĐI CHỢ ONLINE - RAU SẠCH - XANH - TƯƠI</span>
+               <h3>Từ trang trại của chúng tôi đến bàn ăn của bạn</h3>
+               <a href="menu.html" class="btn">xem menu</a>
+            </div>
+            <div class="image">
+               <img src="images/home-img-3.png" alt="">
+            </div>
+         </div>
+
+      </div>
+
+      <div class="swiper-pagination"></div>
+
+   </div>
+
+</section>
+
+<section class="category">
+
+   <h1 class="title">Danh mục thực phẩm theo mùa</h1>
+
+   <div class="box-container">
+
+      <a href="category.html?category=Mùa Xuân" class="box">
+         <img src="images/flower.png" alt="">
+         <h3>Mùa Xuân</h3>
+      </a>
+
+      <a href="category.html?category=Mùa Hạ" class="box">
+         <img src="images/sun.png" alt="">
+         <h3>Mùa Hạ</h3>
+      </a>
+
+      <a href="category.html?category=Mùa Thu" class="box">
+         <img src="images/leaf-fall.png" alt="">
+         <h3>Mùa Thu</h3>
+      </a>
+
+      <a href="category.html?category=Mùa Đông" class="box">
+         <img src="images/snowflake.png" alt="">
+         <h3>Mùa Đông</h3>
+      </a>
+
+   </div>
+
+</section>
+
+
+
+
+<section class="products">
+
+   <h1 class="title">Sản phẩm nổi bật</h1>
+
+   <div class="box-container">
+
+
+   <form action="" method="post" class="box">
+         <input type="hidden" name="pid" value="">
+         <input type="hidden" name="name" value="">
+         <input type="hidden" name="price" value="">
+         <input type="hidden" name="image" value="">
+         <a href="Product_details.html?pid=" class="fas fa-eye"></a>
+         <button type="submit" class="fas fa-shopping-cart" name="add_to_cart"></button>
+         <img src="uploaded_img/bơ.jpg" alt="">
+         <a href="category.html?category=" class="cat"></a>
+         <div class="name">Quả Bơ</div>
+         <div class="flex">
+            <div class="price"><span>10.000đ</span></div>
+            <input type="number" name="qty" class="qty" min="1" max="99" value="1" maxlength="2">
+         </div>
+      </form>
+
+      <form action="" method="post" class="box">
+         <input type="hidden" name="pid" value="">
+         <input type="hidden" name="name" value="">
+         <input type="hidden" name="price" value="">
+         <input type="hidden" name="image" value="">
+         <a href="Product_details.html?pid=" class="fas fa-eye"></a>
+         <button type="submit" class="fas fa-shopping-cart" name="add_to_cart"></button>
+         <img src="uploaded_img/cam.jpg" alt="">
+         <a href="category.html?category=" class="cat"></a>
+         <div class="name">Quả Cam</div>
+         <div class="flex">
+            <div class="price"><span>15.000đ</span></div>
+            <input type="number" name="qty" class="qty" min="1" max="99" value="1" maxlength="2">
+         </div>
+      </form>
+
+      <form action="" method="post" class="box">
+         <input type="hidden" name="pid" value="">
+         <input type="hidden" name="name" value="">
+         <input type="hidden" name="price" value="">
+         <input type="hidden" name="image" value="">
+         <a href="Product_details.html?pid=" class="fas fa-eye"></a>
+         <button type="submit" class="fas fa-shopping-cart" name="add_to_cart"></button>
+         <img src="uploaded_img/cá-ngừ-đại-dương.jpg" alt="">
+         <a href="category.html?category=" class="cat"></a>
+         <div class="name">Cá Ngừ Đại Dương</div>
+         <div class="flex">
+            <div class="price"><span>200.000đ</span></div>
+            <input type="number" name="qty" class="qty" min="1" max="99" value="1" maxlength="2">
+         </div>
+      </form>
+
+      <form action="" method="post" class="box">
+         <input type="hidden" name="pid" value="">
+         <input type="hidden" name="name" value="">
+         <input type="hidden" name="price" value="">
+         <input type="hidden" name="image" value="">
+         <a href="Product_details.html?pid=" class="fas fa-eye"></a>
+         <button type="submit" class="fas fa-shopping-cart" name="add_to_cart"></button>
+         <img src="uploaded_img/xoai.webp" alt="">
+         <a href="category.html?category=" class="cat"></a>
+         <div class="name">Quả Xoài</div>
+         <div class="flex">
+            <div class="price"><span>45.000đ</span></div>
+            <input type="number" name="qty" class="qty" min="1" max="99" value="1" maxlength="2">
+         </div>
+      </form>
+
+      <form action="" method="post" class="box">
+         <input type="hidden" name="pid" value="">
+         <input type="hidden" name="name" value="">
+         <input type="hidden" name="price" value="">
+         <input type="hidden" name="image" value="">
+         <a href="Product_details.html?pid=" class="fas fa-eye"></a>
+         <button type="submit" class="fas fa-shopping-cart" name="add_to_cart"></button>
+         <img src="uploaded_img/dua-hau.webp" alt="">
+         <a href="category.html?category=" class="cat"></a>
+         <div class="name">Quả Dưa Hấu</div>
+         <div class="flex">
+            <div class="price"><span>60.000đ</span></div>
+            <input type="number" name="qty" class="qty" min="1" max="99" value="1" maxlength="2">
+         </div>
+      </form>
+
+      <form action="" method="post" class="box">
+         <input type="hidden" name="pid" value="">
+         <input type="hidden" name="name" value="">
+         <input type="hidden" name="price" value="">
+         <input type="hidden" name="image" value="">
+         <a href="Product_details.html?pid=" class="fas fa-eye"></a>
+         <button type="submit" class="fas fa-shopping-cart" name="add_to_cart"></button>
+         <img src="uploaded_img/vu-sua.webp" alt="">
+         <a href="category.html?category=" class="cat"></a>
+         <div class="name">Quả Vú Sữa</div>
+         <div class="flex">
+            <div class="price"><span>10.000đ</span></div>
+            <input type="number" name="qty" class="qty" min="1" max="99" value="1" maxlength="2">
+         </div>
+      </form>
+      
+
+   </div>
+
+   <div class="more-btn">
+      <a href="menu.html" class="btn">xem tất cả</a>
+   </div>
+
+</section>
+
+
+
+
+<footer class="footer">
+
+   <section class="grid">
+
+      <div class="box">
+         <img src="images/email-icon.png" alt="">
+         <h3>email của chúng tôi</h3>
+         <a href="https://www.google.com/intl/vi/gmail/about/">nthieu033@gmail.com</a>
+      </div>
+      <div class="box">
+         <img src="images/map-icon.png" alt="">
+         <h3>địa chỉ của chúng tôi</h3>
+         <a href="https://www.google.com/maps/place/470+%C4%90%C6%B0%E1%BB%9Dng+Tr%E1%BA%A7n+%C4%90%E1%BA%A1i+Ngh%C4%A9a,+Ho%C3%A0+H%E1%BA%A3i,+Ng%C5%A9+H%C3%A0nh+S%C6%A1n,+%C4%90%C3%A0+N%E1%BA%B5ng+550000,+Vi%E1%BB%87t+Nam/@15.974576,108.2500903,17z/data=!4m13!1m7!3m6!1s0x31421088e365cc75:0x6648fdda14970b2c!2zNDcwIMSQxrDhu51uZyBUcuG6p24gxJDhuqFpIE5naMSpYSwgSG_DoCBI4bqjaSwgTmfFqSBIw6BuaCBTxqFuLCDEkMOgIE7hurVuZyA1NTAwMDAsIFZp4buHdCBOYW0!3b1!8m2!3d15.974576!4d108.252279!3m4!1s0x31421088e365cc75:0x6648fdda14970b2c!8m2!3d15.974576!4d108.252279?hl=vi">470 Trần Đại Nghĩa, Ngũ hành Sơn, Đà Nẵng</a>
+      </div>
+
+      <div class="box">
+         <img src="images/phone-icon.png" alt="">
+         <h3>số điện thoại của chúng tôi</h3>
+         <a href="tel:0856143730">0856143730</a>
+      </div>
+
+   </section>
+</footer>
+
+
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+
+
+</body>
+</html>
